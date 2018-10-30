@@ -18,6 +18,8 @@ public class NewJFrame extends javax.swing.JFrame
     public NewJFrame()
     {
         initComponents();
+        String value = (String) jComboBox1.getSelectedItem();
+        jSlider1.setValue(Integer.valueOf(value));
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -118,7 +120,6 @@ public class NewJFrame extends javax.swing.JFrame
             }
         });
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
