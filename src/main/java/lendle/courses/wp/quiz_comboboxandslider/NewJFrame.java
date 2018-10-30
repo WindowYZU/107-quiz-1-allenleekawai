@@ -82,7 +82,7 @@ public class NewJFrame extends javax.swing.JFrame
         String value = (String) jComboBox1.getSelectedItem();
         for(int i=0; i<jSlider1.getValue(); i++)
         {
-            String value2 = jSlider1.getUIClassID(.i);
+            String value2 = jSlider1.getValue(i);
             if(value2.startsWith(value))
             {
                 jSlider1.setValue(value2);
