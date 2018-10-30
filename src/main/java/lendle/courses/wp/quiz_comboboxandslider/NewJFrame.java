@@ -18,6 +18,14 @@ public class NewJFrame extends javax.swing.JFrame
     public NewJFrame()
     {
         initComponents();
+        JSlider jSlider1=new JSlider();
+        jSlider1.setMinimum(0);
+        jSlider1.setMaximum(100);
+        jSlider1.setPaintTicks(true);
+        jSlider1.setPaintTrack(true);
+        jSlider1.setMinorTickSpacing(10);
+        jSlider1.setMajorTickSpacing(10);
+        jSlider1.setPaintLabels(true);
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -80,27 +88,11 @@ public class NewJFrame extends javax.swing.JFrame
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
         String value = (String) jComboBox1.getSelectedItem();
-        for(int i=0; i<jSlider1.getValue(); i++)
-        {
-            String value2 = jSlider1.getValue(value2.equals("" + i));
-            if(value2.startsWith(value))
-            {
-                jSlider1.setValue(value2);
-                break;
-            }
-        }
+        jSlider1.setValue(Integer.valueOf(value));
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     public static void main(String args[])
     {
-        JSlider jSlider1=new JSlider();
-        jSlider1.setMinimum(0);
-        jSlider1.setMaximum(100);
-        jSlider1.setPaintTicks(true);
-        jSlider1.setPaintTrack(true);
-        jSlider1.setMinorTickSpacing(10);
-        jSlider1.setMajorTickSpacing(20);
-        jSlider1.setPaintLabels(true);
         ///////////////////////////////////////
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
