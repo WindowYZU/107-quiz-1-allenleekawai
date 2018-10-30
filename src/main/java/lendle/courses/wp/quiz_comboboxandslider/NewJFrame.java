@@ -93,10 +93,6 @@ public class NewJFrame extends javax.swing.JFrame
 
     public static void main(String args[])
     {
-        JFrame jFrame=new JFrame();
-        jFrame.setSize(328, 305);
-        jFrame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-        
         JSlider jSlider1=new JSlider();
         jSlider1.setMinimum(0);
         jSlider1.setMaximum(100);
@@ -105,9 +101,7 @@ public class NewJFrame extends javax.swing.JFrame
         jSlider1.setMinorTickSpacing(10);
         jSlider1.setMajorTickSpacing(20);
         jSlider1.setPaintLabels(true);
-        jFrame.add(jSlider1);
         ///////////////////////////////////////
-        jFrame.setVisible(true);
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
